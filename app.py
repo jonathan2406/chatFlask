@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from flask_socketio import SocketIO, send
 import os
-
+#a
 app = Flask(__name__)
 
 app.config['SECRET'] = "secret123";
