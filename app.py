@@ -1,8 +1,10 @@
 from flask import Flask, render_template
 from flask_socketio import SocketIO, send
 import os
+from flask_cors import CORS
 #a
 app = Flask(__name__)
+CORS(app)
 
 app.config['SECRET'] = "secret123";
 
