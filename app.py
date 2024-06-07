@@ -4,7 +4,6 @@ import os
 from flask_cors import CORS
 #a
 app = Flask(__name__)
-CORS(app)
 
 app.config['SECRET'] = "secret123";
 
