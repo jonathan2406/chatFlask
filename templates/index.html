@@ -14,7 +14,7 @@
 <body>
 <script type="text/javascript">
     $(document).ready(function(){
-      var socket = io.connect("https://chatflask-ef559a6c0275.herokuapp.com");
+      var socket = io.connect(location.protocol + '//' + document.domain + ':' + location.port);
 
       socket.on('connect', function(){
          socket.send("User Connected!!");
