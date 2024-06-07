@@ -4,6 +4,7 @@ import os
 from flask_cors import CORS
 #a
 app = Flask(__name__)
+CORS(app)
 
 app.config['SECRET'] = "secret123";
 
@@ -24,4 +25,4 @@ def index():
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
-    socketio.run(app, host="https://chatflask-ef559a6c0275.herokuapp.com", port=port)
+    socketio.run(app, host="https://chatflask-ef559a6c0275.herokuapp.com")
