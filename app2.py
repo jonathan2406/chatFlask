@@ -6,7 +6,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-app.config['SECRET'] = "secret123";
+app.config['SECRET'] = "Pepito123";
 
 socketio = SocketIO(app, cros_allowed_orgins="*")
 
